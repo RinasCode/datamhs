@@ -24,4 +24,4 @@ Sebelum menjalankan proyek ini, pastikan Anda memiliki:
 
 1. **Clone repository** ini:
    ```bash
-   git clone <URL-repository>
+   git clone https://github.com/RinasCode/datamhs.git
