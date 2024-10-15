@@ -1,10 +1,9 @@
 <?php
-// Konfigurasi untuk lokal (XAMPP)
-$host = 'localhost';          
-$port = '3306';               
-$username = 'root';           
-$password = '';               
-$database = 'phpdasar';     
+$host = getenv('DB_HOST');   // Ambil dari environment variable
+$port = getenv('DB_PORT');   // Ambil dari environment variable
+$username = getenv('DB_USER'); // Ambil dari environment variable
+$password = getenv('DB_PASS'); // Ambil dari environment variable
+$database = getenv('DB_NAME'); // Ambil dari environment variable
 
 // Membuat koneksi
 $conn = new mysqli($host, $username, $password, $database, $port);
